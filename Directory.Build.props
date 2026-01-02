@@ -1,0 +1,43 @@
+<Project>
+  <PropertyGroup>
+    <!-- Common metadata -->
+    <Company>Your Company</Company>
+    <Copyright>Copyright © Your Company</Copyright>
+    <Authors>Your Name</Authors>
+
+    <!-- Language and nullability -->
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+
+    <!-- Warnings as errors -->
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>9999</WarningLevel>
+
+    <!-- Output paths - redirect everything to /output -->
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)../output/obj/$(MSBuildProjectName)/</BaseIntermediateOutputPath>
+    <BaseOutputPath>$(MSBuildThisFileDirectory)../output/bin/$(MSBuildProjectName)/</BaseOutputPath>
+    <OutputPath>$(BaseOutputPath)</OutputPath>
+
+    <!-- XML Documentation -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DocumentationFile>$(MSBuildThisFileDirectory)../output/docs/$(MSBuildProjectName).xml</DocumentationFile>
+  </PropertyGroup>
+
+  <!-- XUnit 3 for ALL projects (even non-test projects) -->
+  <ItemGroup>
+    <PackageReference Include="xunit" Version="3.0.0-beta.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.0.0-beta.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <!-- Common package references -->
+  <ItemGroup>
+    <!-- Add your common packages here -->
+    <!-- Examples:
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    -->
+  </ItemGroup>
+</Project>
