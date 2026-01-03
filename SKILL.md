@@ -16,17 +16,17 @@ This skill defines the mandatory standards for .NET development. These rules are
 
 ## 📚 Documentation & Standards
 
--   **[CODE_RULES.md](CODE_RULES.md)**: Coding standards, naming, style, and prohibited patterns.
--   **[ARCH_RULES.md](ARCH_RULES.md)**: Project structure, file organization, and architectural layers.
--   **[TEST_RULES.md](TEST_RULES.md)**: Testing philosophy, patterns, and mandatory practices.
--   **[SETUP.md](SETUP.md)**: Project initialization, configuration, and templates.
--   **[EXAMPLES.md](EXAMPLES.md)**: Reference guide to the included example files.
+-   **[CODE_RULES.md](skills/CODE_RULES.md)**: Coding standards, naming, style, and prohibited patterns.
+-   **[ARCH_RULES.md](skills/ARCH_RULES.md)**: Project structure, file organization, and architectural layers.
+-   **[TEST_RULES.md](skills/TEST_RULES.md)**: Testing philosophy, patterns, and mandatory practices.
+-   **[SETUP.md](skills/SETUP.md)**: Project initialization, configuration, and templates.
+-   **[EXAMPLES.md](skills/EXAMPLES.md)**: Reference guide to the included example files.
 
 ## 🛠️ Quick Start
 
-1.  Run the setup commands in **[SETUP.md](SETUP.md)**.
-2.  Copy `Directory.Build.props` to your `src` directory.
-3.  Follow **[ARCH_RULES.md](ARCH_RULES.md)** for file placement.
-4.  Verify compliance with **[CODE_RULES.md](CODE_RULES.md)** and **[TEST_RULES.md](TEST_RULES.md)** before every commit.
+1.  Run the setup commands in **[SETUP.md](skills/SETUP.md)**.
+2.  Copy `skills/Directory.Build.props` to your `src` directory.
+3.  Follow **[ARCH_RULES.md](skills/ARCH_RULES.md)** for file placement.
+4.  Verify compliance with **[CODE_RULES.md](skills/CODE_RULES.md)** and **[TEST_RULES.md](TEST_RULES.md)** before every commit.
 
 **IF YOU VIOLATE THESE RULES, YOU WILL FAIL.**
